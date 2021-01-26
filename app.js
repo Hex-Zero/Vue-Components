@@ -1,5 +1,9 @@
 const app = Vue.createApp({
-  template: "<h1>Temp</h1>",
+  data() {
+    return {
+      Name: "Maxwell Archer",
+    };
+  },
 });
 
 app.mount("#app");
