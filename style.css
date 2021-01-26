@@ -19,3 +19,7 @@
   width: 100%;
   height: 200px;
 }
+
+.arch-box.arch-box-on {
+  background-color: rebeccapurple;
+}

@@ -13,12 +13,20 @@
       <button @click="Name++">+</button>
       <button v-on:click="Name--">-</button>
       <section class="arch-box-container">
-        <div class="arch-box" @mouseenter="handleEvent"></div>
+        <div
+          class="arch-box"
+          :class="{ 'arch-box-on': boxOn}"
+          @mouseenter="handleEvent"
+          @click="handleBoxClick"
+        ></div>
         <div class="arch-box" @mouseleave="handleEvent"></div>
         <div class="arch-box" @dblclick="handleEvent"></div>
         <div class="arch-box" @mousemove="handleEvent"></div>
       </section>
     </div>
+    <section class="arch-box-container">
+      <div class="arch-box" id="boxThatWasClicked"></div>
+    </section>
     <script src="./app.js"></script>
   </body>
 </html>
