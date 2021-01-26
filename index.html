@@ -8,8 +8,8 @@
   </head>
   <body>
     <div id="app">
-      <h1>{{ Name }}</h1>
-      <button v-on:click="Name++">+</button>
+      <h1 v-show="Name < 35">{{ Name }}</h1>
+      <button @click="Name++">+</button>
       <button v-on:click="Name--">-</button>
     </div>
     <script src="./app.js"></script>
